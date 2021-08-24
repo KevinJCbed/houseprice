@@ -15,9 +15,9 @@ X = training_data[['Avg. Area Income', 'Avg. Area House Age', 'Avg. Area Number 
 model = sm.OLS(Y,X)
 results = model.fit()
 
-show_para = st.checkbox('Do you want to see model parameters?')
+show_para = st.sidebar.checkbox('Do you want to see model parameters?')
 if show_para:
-    st.write(results.summary())
+    st.sidebar.write(results.summary())
 predicted = results.predict(X)
 plot1 = pd.DataFrame(data = {"actual":training_data['Price'], "predicted":predicted})
 
