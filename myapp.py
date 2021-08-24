@@ -6,11 +6,11 @@ import os
 import statsmodels.api as sm
 
 
-os.chdir("/Users/JC/Documents/Python Course/Real projects/housing_project")
+#os.chdir("/Users/JC/Documents/Python Course/Real projects/housing_project")
 
 st.title("DO YOU WANT TO KNOW YOUR HOUSE PRICE?")
 
-training_data = pd.read_csv("train.csv")
+training_data = pd.read_csv("https://raw.githubusercontent.com/KevinJCbed/houseprice/main/train.csv")
 
 st.caption("Here is the sample training data used to predict your house price")
 st.dataframe(training_data)
