@@ -1,8 +1,5 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 import streamlit as st
-import random
-import os
 import statsmodels.api as sm
 
 
